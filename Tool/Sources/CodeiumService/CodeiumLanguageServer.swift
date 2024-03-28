@@ -189,7 +189,7 @@ final class IOTransport {
         stdoutPipe = Pipe()
         stderrPipe = Pipe()
         closed = false
-        queue = DispatchQueue(label: "com.intii.CopilotForXcode.IOTransport")
+        queue = DispatchQueue(label: "com.ahiho.CopilotForXcode.IOTransport")
 
         setupFileHandleHandlers()
     }

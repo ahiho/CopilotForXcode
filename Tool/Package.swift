@@ -59,7 +59,7 @@ let package = Package(
         .package(url: "https://github.com/intitni/Highlightr", branch: "bump-highlight-js-version"),
         .package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
-            from: "0.55.0"
+            from: "0.56.0"
         ),
         .package(url: "https://github.com/apple/swift-syntax.git", exact: "509.0.2"),
         .package(url: "https://github.com/GottaGetSwifty/CodableWrappers", from: "2.0.7"),

@@ -53,6 +53,10 @@ actor GoogleAIChatCompletionsService: ChatCompletionsAPI, ChatCompletionsStreamA
                 throw error
             case .responseStoppedEarly:
                 throw error
+            case .invalidAPIKey:
+                throw error
+            case .unsupportedUserLocation:
+                throw error
             }
         } catch {
             throw error
@@ -99,6 +103,10 @@ actor GoogleAIChatCompletionsService: ChatCompletionsAPI, ChatCompletionsStreamA
                     case .promptBlocked:
                         continuation.finish(throwing: error)
                     case .responseStoppedEarly:
+                        continuation.finish(throwing: error)
+                    case .invalidAPIKey:
+                        continuation.finish(throwing: error)
+                    case .unsupportedUserLocation:
                         continuation.finish(throwing: error)
                     }
                 } catch {

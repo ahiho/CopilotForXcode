@@ -41,6 +41,7 @@ extension PromptToCodePanel {
                 Button(action: {
                     withAnimation(.linear(duration: 0.1)) {
                         store.send(.selectionRangeToggleTapped)
+                        return
                     }
                 }) {
                     WithViewStore(

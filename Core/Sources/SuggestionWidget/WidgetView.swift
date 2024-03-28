@@ -19,6 +19,7 @@ struct WidgetView: View {
                 .onTapGesture {
                     withAnimation(.easeInOut(duration: 0.2)) {
                         store.send(.widgetClicked)
+                        return
                     }
                 }
                 .overlay { WidgetAnimatedCircle(store: store) }

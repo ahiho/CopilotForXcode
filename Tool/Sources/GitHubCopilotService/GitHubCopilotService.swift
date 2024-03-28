@@ -54,7 +54,7 @@ enum GitHubCopilotError: Error, LocalizedError {
 
 public extension Notification.Name {
     static let gitHubCopilotShouldRefreshEditorInformation = Notification
-        .Name("com.intii.CopilotForXcode.GitHubCopilotShouldRefreshEditorInformation")
+        .Name("com.ahiho.CopilotForXcode.GitHubCopilotShouldRefreshEditorInformation")
 }
 
 public class GitHubCopilotBaseService {
